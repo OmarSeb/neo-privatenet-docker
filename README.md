@@ -32,7 +32,10 @@ Build the neo-privnet container in command line (in Docker Start Terminal if you
     
     docker build -t neo-privnet .
 
-(At this point, you should be able to see the container in docker using this command : "docker ps -a")
+This should take some minutes, especially the Cloning neo/python part. 
+(If you have encounter any errors about WGET, try to install it on your machine, and don't forget to make it accessible in your environment variables).
+
+At this point, you should be able to see the container in docker using this command : "docker ps -a"
 
 Start the private network, create a wallet and automatically claim the initial NEO and 48 GAS (takes about 5 minutes):
 
@@ -105,6 +108,10 @@ Now, open the neo-privnet.wif file in the neo-privatenet-docker folder and copy 
 On the GUI, make a right click > Import > Import from WIF and enter the WIF Private key you just copied.
 
 A new address with all the NEO Tokens from your private network should appear. (Try to make Wallet > Rebuild Index to update it).
+
+
+
+It took me a while to set it up, thanks to metachris, ashant, avastmick, birmas and the developer channel on the Neo discord for their help.
 
 
 
